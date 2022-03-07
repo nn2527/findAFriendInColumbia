@@ -1,0 +1,23 @@
+<!--Idea : To make a platform for Columbia students to find friends on campus who they share similar interest(s) with. First the user has to write down their detail to get added to the database (can be seen in the console) and then write keywords to fetch names of people who have similar interests from the temporary database (array!). Since I do not know backend yet, there is no way I could store the information that users submit after they leave but hopefully, I will at least create a static database (through cards) on the same webpage which fetches similar keywords when the Find Friends button is pushed. The steps to do that have been roughly mentioned as comments in my js -->
+<h1>Looking for friends with similar interests on Columbia campus?</h1>
+<h2>Find friends in a few easy steps</h2>
+<h3>First, write down your interests to get added to our database. <br>
+  Then, write the interests you want to share with your future friends in the "Write keywords" box below</h3>
+<div id="bigDiv">
+  <p class="detailsCSS"><b> Full Name - </b></p><input id="name" type="text" class="inputStyle" placeholder="Your name"></input><br><br>
+  <p class="detailsCSS"><b> Interest 1 - </b></p><input id="interest1" type="text" class="inputStyle" placeholder="Your primary hobby"></input><br><br>
+  <p class="detailsCSS"><b>Interest 2 - </b></p><input id="interest2" type="text" class="inputStyle" placeholder="Your secondary hobby"></input><br><br>
+  <p class="detailsCSS"><b>Interest 3 - </b></p><input id="interest3" type="text" class="inputStyle" placeholder="Your tertiary hobby"></input><br><br>
+  <button id="submitDetails" class="inputStyle" onclick="saveData()">Submit my details</button><br><br>
+  <input id="inputBox" type="text" class="inputStyle" placeholder="Write keywords">
+  <button onclick="findAFriend()">Find Friends</button>
+</div>
+<div id="div">
+  <!--I want the options to display here after the person clicks "Find Friends" button above but how could I do it without saving user data in the backend-->
+  <div id="option1"></div>
+  <h2>We hope you found your perfect match. <br>
+    If not, fret not,
+    <br>
+    Find another friend with the same steps!
+  </h2>
+  <h3>For any questions or suggestions, write to Namita at nn2527@columbia.edu</h3>
